@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Barlow", sans-serif;
   width: 100vw;
@@ -87,10 +83,30 @@ span {
   margin-bottom: 1em;
 }
 
+@media screen and (min-width: 768px) {
+  h2 {
+    padding: 0;
+  }
+
+  h3 {
+    padding: 0 6em 0 0;
+  }
+
+  .description-body {
+    margin-left: 5em;
+    padding-top: 1em;
+  }
+
+  .features-body {
+    padding-right: 4.2em;
+  }
+}
+
 /* LAYOUT */
 .container {
   width: 85%;
   margin: 0 auto;
+  max-width: 375px;
 }
 
 .container--flex {
@@ -103,6 +119,13 @@ span {
 
 .square-pattern {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 768px;
+  }
 }
 
 /* header and intro*/
@@ -133,6 +156,37 @@ header {
   border-radius: 1rem;
 }
 
+.intro-img-tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-intro {
+    display: flex;
+    margin-bottom: 2.5em;
+  }
+
+  .intro-main {
+    margin: auto 0;
+  }
+
+  .intro-additional {
+    margin-bottom: 0;
+  }
+
+  .intro-img-mobile {
+    display: none;
+  }
+
+  .intro-img-tablet {
+    display: block;
+    width: 29.875rem;
+    height: 26.5625rem;
+    border-radius: 1rem;
+    margin-left: 5em;
+  }
+}
+
 /* product description */
 .product-description {
   margin-bottom: 7em;
@@ -143,22 +197,69 @@ header {
   margin-bottom: 5em;
 }
 
+.img-tint {
+  background-color: #f16718;
+  border-radius: 1rem;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
 .product-img-1-mobile {
   margin-right: 1.5em;
   background-image: url("./assets/mobile/image-phone-and-keyboard.jpg");
-  background-color: #f16718;
-  border-radius: 1rem;
   width: 8.0625rem;
   height: 12.0625rem;
-  background-size: cover;
-  background-blend-mode: multiply;
   margin-left: -3em;
+}
+
+.product-img-1-tablet {
+  display: none;
+  background-image: url("./assets/tablet/image-phone-and-keyboard.jpg");
+  width: 13.375rem;
+  height: 20rem;
 }
 
 .product-img-2-mobile {
   width: 13.75rem;
   height: 12.0625rem;
   border-radius: 1rem;
+}
+
+.product-img-2-tablet {
+  display: none;
+  width: 27.8125rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 768px;
+  }
+
+  .product-img-1-mobile {
+    display: none;
+  }
+
+  .product-img-1-tablet {
+    display: block;
+    margin-right: 2em;
+  }
+
+  .product-img-2-mobile {
+    display: none;
+  }
+
+  .product-img-2-tablet {
+    display: block;
+  }
+
+  .description-text {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+  }
 }
 
 /* product features */
@@ -179,6 +280,22 @@ header {
 
 .features-title {
   margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .product-features {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .features {
+    width: 50%;
+  }
+
+  .features-icon {
+    margin: 0 auto 3em 0;
+  }
 }
 
 /* footer */
