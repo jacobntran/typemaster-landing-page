@@ -13,13 +13,30 @@ body {
 
 .btn {
   background-color: #e8eff2;
-  padding: 0.8em;
-  border-radius: 0.5rem;
+  padding: 0.7em;
+  border-radius: 0.5em;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  font-weight: 700;
 }
 
 .btn--accent {
   background-color: #f16718;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1440px) {
+  .btn:hover {
+    background-color: #162542;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .btn--accent:hover {
+    background-color: #ff9b62;
+  }
 }
 
 /* TYPOGRAPHY */
@@ -57,15 +74,6 @@ span {
   font-weight: 700;
 }
 
-.btn__text {
-  text-transform: uppercase;
-  color: #162542;
-}
-
-.btn__text--accent {
-  color: #ffffff;
-}
-
 .intro-title {
   margin-bottom: 0.7em;
 }
@@ -92,6 +100,10 @@ span {
     padding: 0 6em 0 0;
   }
 
+  .description-title {
+    margin-bottom: 0.5em;
+  }
+
   .description-body {
     margin-left: 5em;
     padding-top: 1em;
@@ -99,6 +111,28 @@ span {
 
   .features-body {
     padding-right: 4.2em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    padding: 0 3em 0 0;
+  }
+
+  .description-text {
+    margin-left: 9em;
+  }
+
+  .description-body {
+    margin-left: 0;
+  }
+
+  .features-body {
+    padding-right: 1em;
   }
 }
 
@@ -117,7 +151,11 @@ span {
   text-align: center;
 }
 
-.square-pattern {
+.square-pattern-1 {
+  display: none;
+}
+
+.square-pattern-2 {
   display: none;
 }
 
@@ -125,6 +163,26 @@ span {
   .container {
     width: 90%;
     max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 80%;
+    max-width: 1440px;
+  }
+
+  .square-pattern-1 {
+    display: block;
+    position: absolute;
+    right: -9em;
+  }
+
+  .square-pattern-2 {
+    display: block;
+    position: absolute;
+    left: -17em;
+    bottom: 0;
   }
 }
 
@@ -160,6 +218,10 @@ header {
   display: none;
 }
 
+.intro-img-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .site-intro {
     display: flex;
@@ -184,6 +246,40 @@ header {
     height: 26.5625rem;
     border-radius: 1rem;
     margin-left: 5em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-intro {
+    justify-content: space-between;
+    padding-right: 1em;
+  }
+
+  .intro-main {
+    margin: 4.5em 0;
+  }
+
+  .intro-additional {
+    justify-content: flex-start;
+  }
+
+  .btn--accent {
+    margin-right: 2.5em;
+  }
+
+  .intro-img-tablet {
+    display: none;
+  }
+
+  .intro-img-desktop {
+    display: block;
+    width: 33.75rem;
+    height: 30rem;
+    border-radius: 1rem;
+  }
+
+  .intro-main {
+    width: 35%;
   }
 }
 
@@ -219,6 +315,14 @@ header {
   height: 20rem;
 }
 
+.product-img-1-desktop {
+  display: none;
+  background-image: url("./assets/desktop/image-phone-and-keyboard.jpg");
+  width: 15.9375rem;
+  height: 30rem;
+  margin-right: 2rem;
+}
+
 .product-img-2-mobile {
   width: 13.75rem;
   height: 12.0625rem;
@@ -232,12 +336,14 @@ header {
   border-radius: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 90%;
-    max-width: 768px;
-  }
+.product-img-2-desktop {
+  display: none;
+  width: 27.8125rem;
+  height: 30rem;
+  border-radius: 1rem;
+}
 
+@media screen and (min-width: 768px) {
   .product-img-1-mobile {
     display: none;
   }
@@ -259,6 +365,40 @@ header {
     display: flex;
     text-align: left;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product-description {
+    display: flex;
+  }
+
+  .img-container {
+    position: relative;
+    padding-left: 1em;
+  }
+
+  .product-img-1-tablet {
+    display: none;
+  }
+
+  .product-img-1-desktop {
+    display: block;
+  }
+
+  .product-img-2-tablet {
+    display: none;
+  }
+
+  .product-img-2-desktop {
+    display: block;
+  }
+
+  .description-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4em;
   }
 }
 
@@ -295,6 +435,15 @@ header {
 
   .features-icon {
     margin: 0 auto 3em 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product-features {
+    justify-content: space-between;
+  }
+  .features {
+    width: 23%;
   }
 }
 
