@@ -1,0 +1,187 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.btn {
+  background-color: #e8eff2;
+  padding: 0.8em;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.btn--accent {
+  background-color: #f16718;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #162542;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  padding: 0 2em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding: 0 2.5em;
+}
+
+p {
+  line-height: 1.625rem;
+  color: #7b8bad;
+}
+
+span {
+  font-weight: 700;
+}
+
+.btn__text {
+  text-transform: uppercase;
+  color: #162542;
+}
+
+.btn__text--accent {
+  color: #ffffff;
+}
+
+.intro-title {
+  margin-bottom: 0.7em;
+}
+
+.intro-body {
+  margin-bottom: 2em;
+}
+
+.intro-sub-text {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.description-title {
+  margin-bottom: 1em;
+}
+
+/* LAYOUT */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.container--flex {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.square-pattern {
+  display: none;
+}
+
+/* header and intro*/
+header {
+  padding-top: 1.5em;
+  margin-bottom: 4em;
+}
+
+.container--header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-logo {
+  border-radius: 0;
+}
+
+.intro-additional {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.intro-img-mobile {
+  width: 23.25rem;
+  height: 20.6875rem;
+  margin-bottom: 1.5em;
+  border-radius: 1rem;
+}
+
+/* product description */
+.product-description {
+  margin-bottom: 7em;
+}
+
+.img-container {
+  width: 115%;
+  margin-bottom: 5em;
+}
+
+.product-img-1-mobile {
+  margin-right: 1.5em;
+  background-image: url("./assets/mobile/image-phone-and-keyboard.jpg");
+  background-color: #f16718;
+  border-radius: 1rem;
+  width: 8.0625rem;
+  height: 12.0625rem;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-left: -3em;
+}
+
+.product-img-2-mobile {
+  width: 13.75rem;
+  height: 12.0625rem;
+  border-radius: 1rem;
+}
+
+/* product features */
+.features {
+  margin-bottom: 5em;
+}
+
+.features-icon {
+  background-color: #f16718;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 0 auto 3em auto;
+}
+
+.features-title {
+  margin-bottom: 1em;
+}
+
+/* footer */
+footer {
+  margin: 2em 0 3em 0;
+}
